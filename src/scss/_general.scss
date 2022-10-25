@@ -1,0 +1,64 @@
+.btn {
+	background: linear-gradient(0deg, $bluegreen 0%, #4CE2FF 100%);
+	box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+	border-radius: 4px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+	border: none;
+}
+
+.mark {
+	width: 115px;
+	height: 27px;
+	background: #000000;
+	margin: 0 auto;
+	font-weight: normal;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	margin: 33px 0 0;
+	font-weight: bold;
+	font-size: 38px;
+	text-transform: uppercase;
+	color: #222222;
+	text-align: center;
+}
+
+.subtitle {
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 124%;
+	color: #222222;
+	text-align: center;
+	margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+	.title {
+		font-size: 35px;
+	}		
+}
+
+@media (max-width: 767px) {
+	.title {
+		font-size: 30px;
+	}		
+}
+
+@media (max-width: 575px) {
+	.title {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+	.subtitle {
+		font-size: 14px;
+	}		
+}

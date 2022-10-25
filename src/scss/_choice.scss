@@ -1,0 +1,90 @@
+.choice  {
+    text-align: center;
+    .dark_bg {
+		padding-top: 57px;
+		height: 502px;
+		background:#070716;
+        .container {
+            position: relative;
+            .title, .subtitle {
+				color: #FFFFFF;
+            }
+            .mark {
+                background: #FFFFFF;
+                color: #070716; 
+            }			
+        }			
+    }
+    &_img {
+		position: absolute;
+		top: 177px;
+		transform: translateX(-50%);
+		z-index: 1;
+    }
+    &_descr {
+		font-weight: 300;
+		font-size: 17px;
+		line-height: 141%;
+		color: #222222;
+    }
+    .light_bg {
+        background: url('../img/app_section/mobile_bg.svg') center top / cover no-repeat;
+		min-height: 397px;
+		padding-top: 212px;
+    }		
+}
+
+@media (max-width: 1200px) {
+	.choice {
+		&_img {
+			width: 80%;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+	.choice  {
+		.dark_bg {
+			height: 432px;
+        }
+		.light_bg {
+			min-height: 300px;
+			padding-top: 170px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+	.choice {
+		.dark_bg {
+			height: 380px;
+        }
+		.light_bg {
+			min-height: 280px;
+			padding-top: 150px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+	.choice {
+		padding: 0;
+		.dark_bg {
+			min-height: 322px;
+			padding-top: 27px;
+        }
+		.xs_hidden {
+			display: none;
+        }
+		.xs_visible {
+			display: block;
+			font-size: 17px;
+			color: #FFFFFF;
+			margin-top: 240px;
+        }
+		&_img {
+			top: 84px;
+			max-height: 190px;
+        }
+    }
+}

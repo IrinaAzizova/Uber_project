@@ -1,0 +1,63 @@
+.world {
+	min-height: 720px;
+	background: url('../img/bg_world.svg') center center no-repeat;
+	background-color: #080816;
+    padding: 48px 0 50px;
+    .container {
+		text-align: center;
+		position: relative;
+		.mark {
+			background: #FFFFFF;
+			color: #070716;
+        }
+		.title {
+			margin-top: 26px;
+			color: #FFFFFF;
+        }
+    }
+	&_subheader {
+		color: #FFFFFF;
+		margin-top: 13px;
+    }
+	&_link {
+		font-weight: normal;
+		font-size: 15px;
+		text-transform: uppercase;
+		color: #1FBAD6;
+		text-decoration: none;
+		position: relative;
+		bottom: -460px;
+		&:hover {
+			color: $beigepink;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+	.world {
+		min-height: 550px;
+		&_link {
+			bottom: -270px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+	.world {
+		padding: 26px 0 30px;
+		min-height: 360px;
+		.container {
+			padding: 0;
+			.title {
+				margin-top: 14px;
+            }
+        }
+		&_subheader {
+			margin-top: 11px;
+        }
+		&_link {
+			font-size: 15px;
+			bottom: -190px;
+        }
+    }
+}

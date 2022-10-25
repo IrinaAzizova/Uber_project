@@ -1,0 +1,99 @@
+.promo {
+    text-align: center;
+	min-height: 788px;
+	background: url(../img/uber_bg.jpg) center (center / cover) no-repeat;
+	z-index: -1;
+	padding: 195px 0 185px;
+    &_header {
+        font-weight: 900;
+		font-size: 60px;
+		color: #FFFFFF;
+		text-transform: uppercase;
+    }
+    &_subheader {
+        font-weight: bold;
+		font-size: 36px;
+		text-transform: uppercase;
+		color: #FFFFFF;
+    }
+    &_txt {
+        font-weight: 400;
+		font-size: 18px;
+		line-height: 133%;
+		color: #FFFFFF;
+		padding: 0 50px;
+		margin-top: 20px;
+    }
+    &_btn {
+        margin-top: 115px;
+        width: 259px;
+        height: 63px;
+        font-size: 18px;
+        @include btn_hover;
+    }
+}
+
+@media (max-width: 1200px) {
+    .promo {
+        &_header {
+            font-size: 55px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .promo {
+        &_header {
+            font-size: 40px;
+        }
+        &_subheader {
+            font-size: 29px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .promo {
+        padding-bottom: 120px;
+        &_header {
+            line-height: 1.1;
+        }
+        &_subheader {
+            margin-top: 10px;
+			font-size: 27px;
+        }
+        &_txt {
+            font-size: 15px;
+			line-height: 120%;
+        }			
+		&_btn {
+            margin-top: 70px;
+        }		
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        min-height: 400px;
+		padding: 135px 0 34px;
+        &_txt {
+            display: none;
+        }
+        &_header {
+            font-size: 30px;
+        }
+        &_subheader {
+            font-size: 20px;
+			margin-top: 34px;
+        }
+        &_btn {
+			width: 210px;
+			height: 50px;
+			font-size: 16px;
+			margin-top: 73px;
+        }
+    }
+}
+	
+			
+		
